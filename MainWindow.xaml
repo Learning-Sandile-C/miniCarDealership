@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:miniCarDealership"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="315" Width="379">
 
-    </Grid>
+
+    <ListView Margin="27,25,213,65" Background="#FFD4D4D4" x:Name="myListView">
+        <ListView.View>
+            <GridView>
+                <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}"/>
+                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+            </GridView>
+        </ListView.View>
+    </ListView>
+
+
+
+
 </Window>

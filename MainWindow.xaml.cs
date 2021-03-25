@@ -23,6 +23,20 @@ namespace miniCarDealership
         public MainWindow()
         {
             InitializeComponent();
+
+            AddToList(AddDummySpare());
+        }
+
+        private spareManager AddDummySpare()
+        {
+            spareManager obj1 = new spareManager(1, "Wheel");
+            return obj1;
+        }
+
+        private void AddToList(spareManager inObj)
+        {
+            this.myListView.Items.Add(inObj.Name);
+            myListView.ItemsSource = null;
         }
     }
 }
